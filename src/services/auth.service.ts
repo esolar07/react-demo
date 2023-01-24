@@ -13,9 +13,9 @@ class AuthService {
         });
     }
 
-    login(username: string, password: string) {
+    login(email: string, password: string) {
         return axios.post("/api/signin",{
-                username,
+                email,
                 password
             }).then(response => {
                 if (response.data.userToken) {
