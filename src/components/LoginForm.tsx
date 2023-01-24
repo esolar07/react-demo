@@ -126,7 +126,7 @@ class LoginForm extends React.Component <any, State> {
                     Don't have an account.
                     <Link
                         style={{ textDecoration: "none" }}
-                        className="ml-1 text-[#354740] hover:text-green-700"
+                        className="ml-1 text-[#995e30] hover:text-[#462f1e]"
                         to={"/register"}>
                         Create an Account.
                     </Link>
