@@ -92,7 +92,7 @@ class LoginForm extends React.Component <any, State> {
                             <fieldset className="mb-4">
                                 <label className="text-sm font-bold mb-2" htmlFor="email">Email</label>
                                 <Field id='email'
-                                       className="w-full p-3 text-md border rounded shadow focus:border-indigo-500 focus:ring-indigo-500focus:shadow-outline"
+                                       className="w-full p-3 text-md border rounded shadow focus:border-indigo-500 focus:ring-indigo-500 focus:shadow-outline"
                                        placeholder="johndoe@example.com"
                                        name='email'
                                        type='text'/>
@@ -126,7 +126,7 @@ class LoginForm extends React.Component <any, State> {
                     Don't have an account.
                     <Link
                         style={{ textDecoration: "none" }}
-                        className="ml-1 text-blue-600 hover:text-blue-900"
+                        className="ml-1 text-[#354740] hover:text-green-700"
                         to={"/register"}>
                         Create an Account.
                     </Link>
