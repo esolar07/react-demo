@@ -11,10 +11,10 @@ function App() {
   return (
     <main className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-200 h-screen">
         <AppHeader />
-        <div className="mb-10">
-            <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">
-                Find The Words for Your Event
-            </h2>
+        <div className="mb-20">
+            <h1 className="text-center text-4xl md:text-6xl text-[#354740] font-bold tracking-tight text-900">
+                Find The Words for Your Event.
+            </h1>
         </div>
         <Routes>
             <Route path="/" element={<LoginForm />} />

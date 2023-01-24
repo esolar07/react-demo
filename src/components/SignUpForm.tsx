@@ -119,7 +119,7 @@ class SignUpForm extends React.Component<Props, State> {
                             </fieldset>
                             <div className="my-8 text-center">
                                 <button
-                                    className="w-full md:w-3/4 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
+                                    className="w-full md:w-3/4 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500"
                                     type='submit'
                                    >
                                     Sign In

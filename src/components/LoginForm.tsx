@@ -109,7 +109,7 @@ class LoginForm extends React.Component <any, State> {
                             </fieldset>
                             <div className="my-8 text-center">
                                 <button
-                                    className="w-full md:w-3/4 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
+                                    className="w-full md:w-3/4 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500"
                                     type='submit'>
                                     {loading && (
                                         <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">

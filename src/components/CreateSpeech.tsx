@@ -162,7 +162,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                             type='submit'>
                                             Create
                                         </button>
-                                        <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bg-blue-500 hover:bg-blue-700 rounded-full focus:outline-none transition duration-500">
+                                        <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bbg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500">
                                             <Link style={{ textDecoration: "none" }} to={"/home"}>
                                                 Home
                                             </Link>
