@@ -51,10 +51,10 @@ class Home extends React.Component<Props, State> {
 
         return (
             <section>
-                <div className="mx-auto py-14 px-12 w-5/6 lg:w-3/5 bg-white rounded-lg">
-                    <div className="mb-9 font-bold text-gray-900 text-3xl text-center">Your Speeches</div>
+                <div className="mx-auto py-14 px-12 w-5/6 md:w-5/6 bg-white rounded-lg">
+                    <div className="mb-9 font-bold text-[#354740] text-3xl">Your Speeches</div>
                     <div className="space-y-2">
-                        <div className="my-9 bg-white shadow-lg hover:shadow-xl rounded overflow-y-scroll h-[550px]">
+                        <div className="my-9 bg-white shadow-lg hover:shadow-xl rounded overflow-y-scroll min-h-[250px] max-h-[550px]">
                             <table className="table-auto w-full">
                                 <thead className="uppercase text-xs font-semibold text-gray-600 bg-gray-200">
                                 <tr className="hidden md:table-row">
@@ -84,7 +84,7 @@ class Home extends React.Component<Props, State> {
                                 </tbody>
                             </table>
                         </div>
-                        <button className="w-full md:w-1/3 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500">
+                        <button className="w-full md:w-1/3 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500">
                             <Link style={{ textDecoration: "none" }} to={"/create"}>
                                 Create a Speech
                             </Link>

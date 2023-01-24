@@ -41,7 +41,7 @@ class AppHeader extends React.Component <any, State> {
             <header className="flex justify-end	w-full mt-0 mb-10">
                 {this.state.userAuthenticated ? (
                     <button
-                        className="w-40 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
+                        className="w-40 p-3 font-bold text-white bg-[#354740] hover:bg-green-700  rounded-full focus:outline-none transition duration-500"
                         onClick={this.handleLogOut}>
                         Sign Out
                     </button>

@@ -157,12 +157,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                         </div>
                                     </fieldset>
                                     <div className="flex flex-col md:flex-row md:space-x-4 my-8 text-center">
-                                        <button
-                                            className="flex-1 w-full md:w-1/3 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
-                                            type='submit'>
-                                            Create
-                                        </button>
-                                        <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bbg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500">
+                                        <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bg-[#354740] hover:bg-green-900 rounded-full focus:outline-none transition duration-500">
                                             <Link style={{ textDecoration: "none" }} to={"/home"}>
                                                 Home
                                             </Link>
@@ -197,16 +192,16 @@ class CreateSpeech extends React.Component<Props, State> {
                                         <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">{this.state.speech}</dd>
                                     </div>
                                 </dl>
-                                <div className="flex flex-col md:flex-row md:space-x-4 my-8 text-center">
-                                    <button
-                                        className="flex-1 w-full md:w-1/3 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500">
-                                        <Link style={{ textDecoration: "none" }} to={"/home"}>
-                                            Create Another Speech
-                                        </Link>
-                                    </button>
-                                    <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bg-blue-500 hover:bg-blue-700 rounded-full focus:outline-none transition duration-500">
+                                <div className="flex flex-col md:flex-row md:space-x-5 my-8 text-center">
+                                    <button className="flex-1 w-full mt-3 md:mt-0 md:w-1/3 p-3 font-bold text-white bg-[#354740] hover:bg-green-900 rounded-full focus:outline-none transition duration-500">
                                         <Link style={{ textDecoration: "none" }} to={"/home"}>
                                             Home
+                                        </Link>
+                                    </button>
+                                    <button
+                                        className="flex-1 w-full md:w-1/3 p-3 font-bold text-[#354740] hover:text-white border border-[#354740] bg-white hover:bg-[#354740] rounded-full focus:outline-none transition duration-500">
+                                        <Link style={{ textDecoration: "none" }} to={"/home"}>
+                                            Create Another Speech
                                         </Link>
                                     </button>
                                 </div>

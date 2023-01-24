@@ -9,7 +9,7 @@ import AppHeader from "./components/AppHeader";
 
 function App() {
   return (
-    <main className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-200 h-screen">
+    <main className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-200 min-h-full">
         <AppHeader />
         <div className="mb-20">
             <h1 className="text-center text-4xl md:text-6xl text-[#354740] font-bold tracking-tight text-900">
