@@ -17,7 +17,7 @@ function App() {
             </h1>
         </div>
         <Routes>
-            <Route path="/" element={<LoginForm />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/register" element={<SignUpForm />} />
             <Route path="/create" element={<CreateSpeech />} />

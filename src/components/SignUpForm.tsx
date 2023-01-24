@@ -132,7 +132,7 @@ class SignUpForm extends React.Component<Props, State> {
                 <div className="text-sm text-center font-medium text-black-600">
                     Already have an account.
                     <Link
-                        className="ml-1 bg-[#995e30] hover:bg-[#462f1e]"
+                        className="ml-1 text-[#995e30] hover:text-[#462f1e]"
                         style={{ textDecoration: "none" }}
                         to={"/login"}>
                          Login into your account.
