@@ -26,7 +26,6 @@ class AppHeader extends React.Component <any, State> {
 
     handleLogOut() {
         AuthService.logout()
-        alert('test')
         window.location.href = '/login'
             this.setState({
             redirect: '/login'
