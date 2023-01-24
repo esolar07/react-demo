@@ -84,11 +84,11 @@ class Home extends React.Component<Props, State> {
                                 </tbody>
                             </table>
                         </div>
-                        <button className="w-full md:w-1/3 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500">
-                            <Link style={{ textDecoration: "none" }} to={"/create"}>
-                                Create a Speech
-                            </Link>
-                        </button>
+                        <Link style={{ textDecoration: "none" }} to={"/create"}>
+                            <button className="w-full md:w-1/3 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500">
+                                    Create a Speech
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
