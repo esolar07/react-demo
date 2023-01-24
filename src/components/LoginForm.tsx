@@ -81,14 +81,14 @@ class LoginForm extends React.Component <any, State> {
             return <Navigate to={this.state.redirect} />
         }
         return (
-            <div className="mx-auto py-24 px-12 w-5/6 lg:w-3/5 bg-white rounded-lg">
-                <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">Login</h2>
+            <div className="mx-auto py-24 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
+                <h3 className="text-center text-3xl font-bold tracking-tight text-gray-700">Login</h3>
                 <Formik
                     initialValues={formInitialValues}
                     validationSchema={this.formValidationSchema}
                     onSubmit={this.handleLogin}>
                     {({isValid, isSubmitting}) => (
-                        <Form className="w-full md:w-5/6 mx-auto">
+                        <Form className="w-full md:w-3/4 mx-auto">
                             <fieldset className="mb-4">
                                 <label className="text-sm font-bold mb-2" htmlFor="email">Email</label>
                                 <Field id='email'
@@ -121,10 +121,14 @@ class LoginForm extends React.Component <any, State> {
                         </Form>
                     )}
                 </Formik>
-                <hr className="mb-4 border-t"/>
+                <hr className="mb-4 border-t w-3/4 m-auto"/>
                 <div className="text-sm text-center font-medium text-black-600 hover:text-red-500">
-                    <Link style={{ textDecoration: "none" }} to={"/register"}>
-                        Create an Account
+                    Don't have an account.
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        className="ml-1 text-blue-600 hover:text-blue-900"
+                        to={"/register"}>
+                        Create an Account.
                     </Link>
                 </div>
             </div>

@@ -26,7 +26,9 @@ class AppHeader extends React.Component <any, State> {
 
     handleLogOut() {
         AuthService.logout()
-        this.setState({
+        alert('test')
+        window.location.href = '/login'
+            this.setState({
             redirect: '/login'
         });
     }
@@ -37,13 +39,14 @@ class AppHeader extends React.Component <any, State> {
         }
         return (
             <header className="flex justify-end	w-full mt-0 mb-10">
-                {this.state.userAuthenticated ?? (
-                <button
-                    className="w-40 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
-                    onClick={this.handleLogOut}>
-                   Sign Out
-                </button>
-                )}
+                {this.state.userAuthenticated ? (
+                    <button
+                        className="w-40 p-3 font-bold text-white bg-red-500 hover:bg-red-700 rounded-full focus:outline-none transition duration-500"
+                        onClick={this.handleLogOut}>
+                        Sign Out
+                    </button>
+                ) : (<div/>)
+                }
             </header>
         )
     }

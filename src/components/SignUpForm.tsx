@@ -91,8 +91,8 @@ class SignUpForm extends React.Component<Props, State> {
         }
         // disabled={!isValid || isSubmitting}
         return (
-            <div className="mx-auto py-24 px-12 w-5/6 lg:w-3/5 bg-white rounded-lg">
-                <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">Sign Up Form</h2>
+            <div className="mx-auto py-24 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
+                <h3 className="text-center text-3xl font-bold tracking-tight text-gray-700">Sign Up Form</h3>
                 <Formik
                     initialValues={formInitialValues}
                     validationSchema={this.formValidationSchema}
@@ -128,10 +128,14 @@ class SignUpForm extends React.Component<Props, State> {
                         </Form>
                     )}
                 </Formik>
-                <hr className="mb-4 border-t"/>
-                <div className="text-sm text-center font-medium text-black-600 hover:text-red-500">
-                    <Link style={{ textDecoration: "none" }} to={"/login"}>
-                        Login
+                <hr className="mb-4 border-t w-3/4 m-auto"/>
+                <div className="text-sm text-center font-medium text-black-600">
+                    Already have an account.
+                    <Link
+                        className="ml-1 text-blue-600 hover:text-blue-900"
+                        style={{ textDecoration: "none" }}
+                        to={"/login"}>
+                         Login into your account.
                     </Link>
                 </div>
             </div>
