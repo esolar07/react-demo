@@ -122,7 +122,7 @@ class LoginForm extends React.Component <any, State> {
                     )}
                 </Formik>
                 <hr className="mb-4 border-t w-3/4 m-auto"/>
-                <div className="text-sm text-center font-medium text-black-600 hover:text-red-500">
+                <div className="text-sm text-center font-medium text-black-600">
                     Don't have an account.
                     <Link
                         style={{ textDecoration: "none" }}
