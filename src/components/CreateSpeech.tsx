@@ -106,7 +106,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                         <div className="items-center" role="group">
                                             <div>
                                                 <Field
-                                                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                    className="h-4 w-4 border-gray-300 accent-[#354740]"
                                                     type="radio"
                                                     name="type"
                                                     value="wedding vows"/>
@@ -114,7 +114,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                             </div>
                                             <div>
                                                 <Field
-                                                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                    className="h-4 w-4 border-gray-300 accent-[#354740]"
                                                     type="radio"
                                                     name="type"
                                                     value="best man speech"/>
@@ -122,7 +122,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                             </div>
                                             <div>
                                                 <Field
-                                                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                    className="h-4 w-4 border-gray-300 accent-[#354740]"
                                                     type="radio"
                                                     name="type"
                                                     value="maid of honor speech"/>
@@ -156,7 +156,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                     <fieldset className="mb-4">
                                         <div>
                                             <Field
-                                                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                className="h-4 w-4 rounded border-gray-300 accent-[#354740]"
                                                 type="checkbox"
                                                 name="save"/>
                                             Store my speech
