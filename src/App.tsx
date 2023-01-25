@@ -13,7 +13,7 @@ function App() {
         <AppHeader />
         <div className="mb-20">
             <h1 className="text-center text-4xl md:text-6xl text-[#354740] font-bold tracking-tight text-900">
-                Find The Words for Your Event<span className="text-[#995e30]">.</span>
+                Find The Words for <div>Your Event<span className="text-[#995e30]">.</span></div>
             </h1>
         </div>
         <Routes>

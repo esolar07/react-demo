@@ -91,14 +91,14 @@ class SignUpForm extends React.Component<Props, State> {
         }
         // disabled={!isValid || isSubmitting}
         return (
-            <div className="mx-auto py-24 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
-                <h3 className="text-center text-3xl font-bold tracking-tight text-gray-700">Sign Up Form</h3>
+            <div className="mx-auto py-14 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
+                <h3 className="text-center text-3xl font-bold tracking-tight text-gray-700">Sign Up</h3>
                 <Formik
                     initialValues={formInitialValues}
                     validationSchema={this.formValidationSchema}
                     onSubmit={this.handleSignUp}>
                     {({isValid, isSubmitting}) => (
-                        <Form className="w-full md:w-5/6 mx-auto">
+                        <Form className="w-full md:w-4/5 mx-auto mt-5">
                             <fieldset className="mb-4">
                                 <label className="text-sm font-bold mb-2" htmlFor="email">Email</label>
                                 <Field id='email'

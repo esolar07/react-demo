@@ -81,14 +81,14 @@ class LoginForm extends React.Component <any, State> {
             return <Navigate to={this.state.redirect} />
         }
         return (
-            <div className="mx-auto py-24 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
+            <div className="mx-auto py-14 px-12 w-full md:w-3/5 lg:w-2/5 bg-white rounded-lg">
                 <h3 className="text-center text-3xl font-bold tracking-tight text-gray-700">Login</h3>
                 <Formik
                     initialValues={formInitialValues}
                     validationSchema={this.formValidationSchema}
                     onSubmit={this.handleLogin}>
                     {({isValid, isSubmitting}) => (
-                        <Form className="w-full md:w-3/4 mx-auto">
+                        <Form className="w-full md:w-4/5 mx-auto mt-8">
                             <fieldset className="mb-4">
                                 <label className="text-sm font-bold mb-2" htmlFor="email">Email</label>
                                 <Field id='email'
