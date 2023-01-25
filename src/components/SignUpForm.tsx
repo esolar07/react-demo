@@ -56,7 +56,7 @@ class SignUpForm extends React.Component<Props, State> {
     handleSignUp(formValue: { email: string; password: string }) {
         const { email, password } = formValue
         this.setState({
-            loading: false,
+            loading: true,
             successful: false
         });
         AuthService.register(email, password)
@@ -122,7 +122,7 @@ class SignUpForm extends React.Component<Props, State> {
                                     className="w-full md:w-3/4 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500"
                                     type='submit'
                                    >
-                                    Sign In
+                                    {!this.state.loading ? "Sign In" : "Processing..."}
                                 </button>
                             </div>
                         </Form>

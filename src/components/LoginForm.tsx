@@ -111,11 +111,7 @@ class LoginForm extends React.Component <any, State> {
                                 <button
                                     className="w-full md:w-3/4 p-3 font-bold text-white bg-[#354740] hover:bg-green-700 rounded-full focus:outline-none transition duration-500"
                                     type='submit'>
-                                    {loading && (
-                                        <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
-                                        </svg>
-                                    )}
-                                    <span>Sign In</span>
+                                    {!this.state.loading ? "Log In" : "Processing..."}
                                 </button>
                             </div>
                         </Form>

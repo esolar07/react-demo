@@ -16,7 +16,8 @@ type State = {
     type: string,
     years: string,
     speech: string | null,
-    save: boolean
+    save: boolean,
+    loading: boolean
 }
 
 class CreateSpeech extends React.Component<Props, State> {
@@ -24,6 +25,7 @@ class CreateSpeech extends React.Component<Props, State> {
         super(props);
 
         this.state = {
+            loading: false,
             redirect: null,
             userAuthenticated: false,
             userToken: { accessToken: "" },
@@ -46,14 +48,18 @@ class CreateSpeech extends React.Component<Props, State> {
 
     handleCreateSpeech(formValue: {name: string, type: string, years: string, save: boolean} ) {
         const {name, type, years, save} = formValue;
+        this.setState({
+            loading: true
+        })
         return axios.post("/api/generate",{ name, type, years, save},
             { headers: authHeader() }).then(response => {
                 this.setState({
+                    loading: false,
                     name: name,
                     type: type,
                     years: years,
                     save: save,
-                    speech: response.data.result
+                    speech: response.data.result,
                 });
         });
     }
@@ -165,7 +171,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                     <button
                                         className="flex-1 mt-3 md:mt-0 w-full md:w-1/3 p-3 font-bold text-[#354740] hover:text-white border border-[#354740] bg-white hover:bg-[#354740] rounded-full focus:outline-none transition duration-500"
                                         type='submit'>
-                                        Create
+                                        {!this.state.loading ? "Create" : "Processing..."}
                                     </button>
                                     </div>
                                 </Form>
