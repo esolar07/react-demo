@@ -5,8 +5,8 @@ import App from './App';
 import { HashRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
-//axios.defaults.baseURL = "https://nodejs-demo-6g5p.onrender.com/";
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://nodejs-demo-6g5p.onrender.com/";
+// axios.defaults.baseURL = "http://localhost:3001";
 axios.defaults.headers.common['Authorization'] = 'BEARER TOKEN';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 

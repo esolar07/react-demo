@@ -211,7 +211,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                     </Link>
                                     <Link className="flex-1 w-full md:w-1/3 mt-3 md:mt-0" style={{ textDecoration: "none" }} to={"/create"}>
                                         <button
-                                            className="p-3 w-full  font-bold text-[#354740] hover:text-white border border-[#354740] bg-white hover:bg-[#354740] rounded-full focus:outline-none transition duration-500">
+                                            className="p-3 w-full font-bold text-[#354740] hover:text-white border border-[#354740] bg-white hover:bg-[#354740] rounded-full focus:outline-none transition duration-500">
                                                 Create Another Speech
                                         </button>
                                     </Link>
