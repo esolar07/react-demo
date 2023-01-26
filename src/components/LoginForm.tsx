@@ -73,7 +73,6 @@ class LoginForm extends React.Component <any, State> {
                 });
             }
         ).catch(error => {
-            alert('test')
             this.setState({
                 loading: false,
                 error: true
