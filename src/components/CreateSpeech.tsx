@@ -17,7 +17,8 @@ type State = {
     years: string,
     speech: string | null,
     save: boolean,
-    loading: boolean
+    loading: boolean,
+    error: boolean
 }
 
 class CreateSpeech extends React.Component<Props, State> {
@@ -33,7 +34,8 @@ class CreateSpeech extends React.Component<Props, State> {
             type: "",
             years: "",
             speech: null,
-            save: true
+            save: true,
+            error: false
         };
 
         this.handleCreateSpeech = this.handleCreateSpeech.bind(this)
@@ -60,8 +62,13 @@ class CreateSpeech extends React.Component<Props, State> {
                     years: years,
                     save: save,
                     speech: response.data.result,
+                    error: false
                 });
-        });
+        }).catch(error => {
+           this.setState({
+               error: true
+           })
+        })
     }
 
     componentDidMount() {
@@ -169,6 +176,12 @@ class CreateSpeech extends React.Component<Props, State> {
                                         {!this.state.loading ? "Create" : "Processing..."}
                                     </button>
                                     </div>
+                                    {this.state.error &&
+                                    <div className="md:space-x-4 my-5 px-3 py-5 text-left bg-red-100 rounded-md">
+                                        <p className="text-red-800">Looks like something went wrong. Please try again
+                                            later.</p>
+                                    </div>
+                                    }
                                 </Form>
                             </Formik></>
                             :

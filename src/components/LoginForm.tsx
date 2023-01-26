@@ -18,6 +18,7 @@ type State = {
     email: string,
     password: string,
     loading: boolean,
+    error: boolean
 };
 class LoginForm extends React.Component <any, State> {
 
@@ -31,6 +32,7 @@ class LoginForm extends React.Component <any, State> {
             redirect: null,
             userToken: { accessToken: "" },
             userAuthenticated: false,
+            error: false
         };
     }
 
@@ -69,7 +71,12 @@ class LoginForm extends React.Component <any, State> {
                     loading: false,
                 });
             }
-        );
+        ).catch(error => {
+            alert('test')
+            this.setState({
+                error: true
+            })
+        });
     }
     render() {
         const { loading } = this.state;
@@ -114,6 +121,11 @@ class LoginForm extends React.Component <any, State> {
                                     {!this.state.loading ? "Log In" : "Processing..."}
                                 </button>
                             </div>
+                            {this.state.error &&
+                            <div className="w-full md:space-x-4 my-5 px-3 py-5 text-left bg-red-100 rounded-md">
+                                <p className="text-red-800">Looks like something went wrong. Please try again.</p>
+                            </div>
+                            }
                         </Form>
                     )}
                 </Formik>
