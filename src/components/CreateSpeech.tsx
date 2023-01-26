@@ -179,7 +179,7 @@ class CreateSpeech extends React.Component<Props, State> {
                                     </div>
                                     {this.state.error &&
                                     <div className="md:space-x-4 my-5 px-3 py-5 text-left bg-red-100 rounded-md">
-                                        <p className="text-red-800">Looks like something went wrong. Please try again
+                                        <p className="text-red-800">Looks like something went wrong. OpenAI could be overloaded with other requests. Please try again
                                             later.</p>
                                     </div>
                                     }
