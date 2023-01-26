@@ -69,11 +69,13 @@ class LoginForm extends React.Component <any, State> {
                     error.toString();
                 this.setState({
                     loading: false,
+                    error: true
                 });
             }
         ).catch(error => {
             alert('test')
             this.setState({
+                loading: false,
                 error: true
             })
         });

@@ -66,7 +66,8 @@ class CreateSpeech extends React.Component<Props, State> {
                 });
         }).catch(error => {
            this.setState({
-               error: true
+               error: true,
+               loading: false
            })
         })
     }

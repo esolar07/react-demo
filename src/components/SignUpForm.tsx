@@ -77,11 +77,15 @@ class SignUpForm extends React.Component<Props, State> {
                     e.toString();
                 this.setState({
                     successful: false,
+                    error: true,
+                    loading: false
                 });
             }
         ).catch(error => {
             this.setState({
-                error: true
+                successful: false,
+                error: true,
+                loading: false
             })
         });
     }
