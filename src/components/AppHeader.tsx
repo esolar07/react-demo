@@ -15,7 +15,7 @@ const AppHeader = () =>  {
                 <Link className="w-full md:w-40 mr-0 md:mr-4 " style={{textDecoration: "none"}} to={"/home"}>
                     <button
                         className="w-full md:w-40 p-3 font-bold text-white bg-[#354740] hover:bg-green-900 rounded-full focus:outline-none transition duration-500">
-                        Home
+                        Home Page
                     </button>
                 </Link>
                 <button
